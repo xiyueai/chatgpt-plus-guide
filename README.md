@@ -1,201 +1,282 @@
-# 2026 ChatGPT Plus / Pro 官方订阅教程：信用卡、App Store、Google Play 怎么付，失败怎么排查
+# ChatGPT Plus / Pro 怎么开通？2026 国内 4 种充值方式实测对比（代充 / App Store / Google Play / 虚拟卡）
 
-> 最近更新：2026 年 10 月 13 日
+![ChatGPT Plus / Pro 国内 4 种开通方式对比](images/banner.png)
 
-这份教程讲怎么通过 **OpenAI 官方渠道** 自己订阅 ChatGPT Plus / Pro：网页信用卡、iPhone App Store、安卓 Google Play 三条路怎么走，付款失败怎么排查，订阅怎么管理和取消。
+> 📅 最近更新：2026-10-14 ｜ 价格每次变动都会同步到这里，⭐ Star 一下方便下次找到
 
-所有步骤都以官方页面为准，文末列了官方来源链接。觉得有用可以点右上角 ⭐ Star，OpenAI 套餐有变化时这里会更新。
+> **广告披露：** 本仓库由代充站 [溪悦 xiyueai.cc](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2) 运营者维护，文中「方式一」和标有 💡 的提示为自家广告，其余步骤按官方规则写，供自己动手的人参考。
 
-> **广告披露：** 本仓库维护者运营代充站 [溪悦 xiyueai.cc](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide)，文中有一处广告位，已明确标出。其余内容与广告无关。
+---
 
-------
+## ⚡ 30 秒选对方式
+
+先回答两个问题：**有没有能付境外订阅的卡？愿不愿意折腾切区、节点？**
+
+| 你的情况 | 推荐方式 | 要准备什么 | 大概多久 |
+| --- | --- | --- | --- |
+| 没有境外卡，只想尽快用上 | 👉 [方式一：溪悦代充](#方式一溪悦代充最省事) | 支付宝 / 微信 / USDT | 几分钟 |
+| 有 iPhone / iPad，愿意切美区 | [方式二：App Store](#方式二美区-app-store-礼品卡内购) | 美区 Apple 账户 + 礼品卡 | 半小时起 |
+| 安卓 + 国内双币卡 | [方式三：Google Play](#方式三google-play-双币卡内购) | 美区 Google 账号 + 美国节点 | 半小时起，生效可能要 1~2 天 |
+| 熟悉海外支付，还要订别的海外服务 | [方式四：官网 + 虚拟卡](#方式四官网--虚拟卡) | 虚拟卡（需实名、要充值） | 视开卡速度 |
+
+```text
+没有境外卡？ ──是──▶ 方式一 代充
+     │否
+有 iPhone？ ──是──▶ 方式二 App Store
+     │否
+安卓 + 双币卡？ ──是──▶ 方式三 Google Play
+     │否
+             ──────▶ 方式四 官网 + 虚拟卡
+```
+
+---
 
 ## 📚 目录
 
-- [付款前先确认三件事](#before)
-- [Plus、Pro 怎么选](#plans)
-- [方法一：网页信用卡 / 借记卡订阅](#web)
-- [方法二：iPhone / iPad App Store 订阅](#ios)
-- [方法三：安卓 Google Play 订阅](#android)
-- [付款失败常见报错](#errors)
-- [订阅成功后：怎么查、怎么取消、能不能退款](#manage)
-- [常见问题 FAQ](#faq)
-- [官方来源](#sources)
+- [为什么国内开通这么麻烦](#为什么国内开通这么麻烦)
+- [方式一：溪悦代充（最省事）](#方式一溪悦代充最省事)
+- [方式二：美区 App Store 礼品卡内购](#方式二美区-app-store-礼品卡内购)
+- [方式三：Google Play 双币卡内购](#方式三google-play-双币卡内购)
+- [方式四：官网 + 虚拟卡](#方式四官网--虚拟卡)
+- [四种方式算总账](#四种方式算总账)
+- [付款失败报错速查](#付款失败报错速查)
+- [开通后：查状态、取消、续费](#开通后查状态取消续费)
+- [常见问题 FAQ](#常见问题-faq)
 
-------
+---
 
-<a id="before"></a>
+## 为什么国内开通这么麻烦
 
-## 付款前先确认三件事
+卡在三个地方：
 
-1. **所在地区受支持。** OpenAI 只在部分国家和地区提供服务，先看 [支持的国家和地区](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories)。从不支持的地区使用可能导致账号受限，任何付款方式都改变不了这一点。
-2. **付款方式支持线上订阅。** 信用卡 / 借记卡要支持境外线上交易、周期扣款和 3D Secure 验证。不确定就先问发卡行。
-3. **账号是你自己的、能正常登录。** 不要给买来的成品号或多人共用的账号订阅，出问题没法申诉。
+1. **地区：** 中国大陆不在 OpenAI [支持的国家和地区](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) 里，App Store、Google Play 国区都搜不到官方 App。
+2. **付款：** 官网订阅走 Stripe 收单，国内卡经常被拒；App 内购又要求商店账号在支持地区。
+3. **三套订阅各管各的：** 官网、Apple、Google 的订阅互不相通，在哪买就只能在哪续费、取消、退款。
 
-------
+所以无论选哪种方式，都盯住四件事：**账号是不是你自己的、付款渠道靠不靠谱、出问题有没有人管、会不会泄露账号。**
 
-<a id="plans"></a>
+---
 
-## Plus、Pro 怎么选
+## 方式一：溪悦代充（最省事）
 
-| 你的情况 | 选什么 |
-|---|---|
-| 日常问答、写作、翻译、偶尔写代码 | Plus |
-| 每天用 ChatGPT 或 Codex 持续干活，Plus 经常在重置前用完 | Pro |
-| 只是某段时间 Codex 额度不够 | 先看账号 Usage 页里有没有额外点数可买，不一定要升级 |
+![方式一：溪悦代充，Plus ¥118/月，充进自己账号](images/method1.png)
 
-几点说明：
+> 🟢 **适合：** 没有境外卡、不想切区挂节点、要中文售后的人。
 
-- 买的是 **会员权限**，不是某一个模型。能用哪些模型、额度多少，以账号里的模型选择器和 Settings → Usage 为准。
-- Pro 分几个价位档，各档额度不同，而且 OpenAI 近期调整过。网上常说的「5x」「20x」是习惯叫法，不是固定倍数，买之前看 [Pro 档位官方说明](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers)。
-- ChatGPT 会员 **不包含 API 额度**，API 是另一套按量计费。
-- 先用一周真实任务判断够不够用，再决定升不升级，不要按「以后可能会用」去买。
+[溪悦 xiyueai.cc](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2) 用人民币或 USDT 付款，会员直接开在 **你自己的 ChatGPT 账号** 上，不用交密码，也不用换号。
 
-------
+### 💰 价格表（2026-10-14）
 
-<a id="web"></a>
+| 商品 | 对应官方档位 | 溪悦价格 | 官方价格（参考） |
+| --- | --- | --- | --- |
+| **ChatGPT Plus 1 个月** | Plus | **¥118** | $20/月 |
+| **ChatGPT Pro 5x 1 个月** | Pro $100 档 | **¥650** | $100/月 |
+| **ChatGPT Pro 20x 1 个月** | Pro $200 档 | **¥1080** | $200/月 |
+| Codex 额度充值 | 250 / 500 / 1000 / 2500 | ¥73 起 | — |
 
-## 方法一：网页信用卡 / 借记卡订阅
+> 价格以 [xiyueai.cc](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2) 商品页实时显示为准。官方价格不含税，App Store / Google Play 的实际扣款通常更高。
+
+### ✅ 为什么选它
+
+- **付款简单：** 支付宝 / 微信 / USDT 都行，不用境外卡，不用切 Apple ID 或 Google 地区。
+- **充进你自己的号：** 不用交 ChatGPT 密码，聊天记录、GPTs、项目都还在。
+- **全平台通用：** 会员绑在账号上，网页、电脑客户端、手机 App、Codex 登录同一个号都能用。
+- **失败可重试：** 开通失败卡密退回，可以重新提交；质保条款以商品页为准。
+- **有人管：** 下单、兑换、售后都有中文客服。
+
+### 🧭 开通流程（3 步）
+
+1. 在 [xiyueai.cc](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2) 选好套餐下单，付款后拿到卡密。
+2. 打开兑换站 [cz.xiyueai.cc](https://cz.xiyueai.cc)，按页面提示填卡密和账号信息提交。
+3. 回到 [chatgpt.com](https://chatgpt.com) 刷新，左下角头像处显示新套餐就是开好了。
+
+### ⚠️ 下单前看一眼
+
+- 自助开通需要提交账号的 **Session**。它不是密码，但属于敏感凭证：开通成功后去 ChatGPT **Settings → Security → 退出所有设备**，交出去的 Session 立刻失效。
+- 卡密 **买了就用**，下单 5 天内没用的不退款。
+- 代充不是 OpenAI 官方渠道，改变不了 OpenAI 的地区和账号规则。账号本身被风控的话，任何方式都开不了。
+
+> 💬 **客服：** 微信 `GTGZTQ` ｜ QQ `99898089`（加好友备注「溪悦」）。找客服下单免 2% 手续费。
+
+---
+
+## 方式二：美区 App Store 礼品卡内购
+
+![方式二：美区 App Store 礼品卡内购步骤](images/method2.png)
+
+> 🍎 **适合：** 有 iPhone / iPad、不介意切换 Apple 账户地区的人。
 
 ### 步骤
 
-1. 电脑浏览器打开 [chatgpt.com](https://chatgpt.com/) 并登录。
-2. 点左下角头像 → **Upgrade plan**，选 Plus 或 Pro。
-3. 在付款页填写卡号、有效期、CVC 和账单地址。**账单地址按发卡行登记的如实填写**，不要随便编一个。
-4. 按银行提示完成验证（短信验证码或银行 App 确认）。
-5. 付款成功后刷新页面，左下角会显示新套餐。
+1. **切到美区：** iPhone「设置 → Apple 账户 → 媒体与购买项目 → 查看账户 → 国家/地区」，选美国，同意条款。切换前要先用完余额、取消正在生效的订阅，不然改不了。账单地址要填美国地址。
+2. **下官方 App：** App Store 搜「ChatGPT」，认准开发者是 **OpenAI**，山寨 App 很多。
+3. **登录自己的账号：** 用你自己的 OpenAI 账号，别用买来或共用的号。
+4. **买美区礼品卡充值：** 正规渠道买美区 App Store 礼品卡，兑换到 Apple 账户余额。
+5. **App 内订阅：** ChatGPT App → 头像 → Upgrade，选 Plus 或 Pro，用余额付款。
 
 ### 注意
 
-- 被拒一次后，先看清原因再试，**不要短时间内反复提交**，次数多了账号和卡都可能被风控。
-- 首次付款成功不代表以后每月自动续费一定成功，卡片过期或额度不足都会导致续费失败。
-- 账单币种可能按地区显示，详见 [多币种账单说明](https://help.openai.com/en/articles/10421635-multi-currency-billing)。
+- 订阅由 Apple 扣款，续费、取消、退款都在「设置 → Apple 账户 → 订阅」里处理，**删 App 不等于取消订阅**。
+- 美区价格一般比官网略高，而且每月要自己补余额，余额不够就续费失败。
+- 来路不明的低价礼品卡可能是黑卡，被 Apple 判定异常时，余额和 Apple 账户都可能被封。
+- 切区可能违反 Apple 的地区条款，后果自担。
 
-------
+> 💡 **嫌每月补礼品卡麻烦？** [溪悦代充](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2) 直接用支付宝付人民币，不用切区。
 
-<a id="ios"></a>
+---
 
-## 方法二：iPhone / iPad App Store 订阅
+## 方式三：Google Play 双币卡内购
 
-适合所在地区受支持、并且 App 内能看到订阅入口的人。
+![方式三：Google Play 双币卡内购步骤](images/method3.png)
 
-1. 从 App Store 安装 **OpenAI 官方** 的 ChatGPT App（开发者是 OpenAI，注意别下到山寨 App）。
-2. 登录你的 ChatGPT 账号 → 设置 → 升级。
-3. 用 Apple 账号的付款方式或余额完成购买。
+> 🤖 **适合：** 安卓手机 + 已开通境外支付的国内 Visa / Mastercard 双币卡。
+
+好处是付款对象从 OpenAI 换成了 Google，不少国内双币卡在 Google Play 能绑卡成功，不用虚拟卡。
+
+### 步骤
+
+1. **准备美区 Google 账号：** Google Play → 设置 → 常规 → 账号和设备偏好设置，确认国家/地区是美国。没有就新注册一个。**地区一年只能改一次**，别反复切。
+2. **全程美国节点：** 下载、绑卡、付款的整个过程保持同一个美国节点，中途换 IP 容易触发风控。
+3. **下官方 App：** Google Play 搜「ChatGPT」，认准开发者是 **OpenAI**。
+4. **绑卡：** Google Play →「付款和订阅 → 付款方式」添加双币卡，Google 会扣一笔小额验证。
+5. **订阅：** 打开 ChatGPT，登录自己的账号，点 **Upgrade to Plus**，确认金额后付款。
 
 ### 注意
 
-- 订阅由 Apple 管理：续费、取消、退款都在 iPhone 的「设置 → Apple 账户 → 订阅」里操作，不在 ChatGPT 网页里。
-- App 内看不到订阅入口，通常和 App Store 地区、账号状态有关。不要为了绕过限制切区或填写虚假信息。
-- 不要购买来路不明的低价礼品卡，被 Apple 判定来源异常时，余额和 Apple 账户都可能受影响。
+- 按账号所在地计税，结算页的「总计」才是最终扣款金额。
+- 付款后可能要 24~48 小时才生效，别急着重复下单。
+- 付款失败最常见的原因：卡没开境外支付、额度不够、IP 和账单地址不在同一地区、银行风控。逐项排查，别连续重试。
+- 换区、挂节点可能违反 Google 和 OpenAI 的地区条款，后果自担。
 
-------
+> 💡 **绑卡一直失败？** 换 [溪悦代充](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2)，不用卡也不用节点，几分钟到账。
 
-<a id="android"></a>
+---
 
-## 方法三：安卓 Google Play 订阅
+## 方式四：官网 + 虚拟卡
 
-1. 从 Google Play 安装 OpenAI 官方 ChatGPT App 并登录。
-2. 在 App 内选择升级，用 Google Play 绑定的付款方式完成购买。
-3. 续费和取消在 Google Play →「付款和订阅」里管理。
+![方式四：官网 + 虚拟卡订阅步骤](images/method4.png)
 
-和 App Store 一样，订阅入口是否出现取决于 Google Play 地区和账号状态。
+> 💳 **适合：** 熟悉海外支付，还要订阅其他海外服务（Claude、Midjourney 等）的人。
 
-------
+### 步骤
 
-<a id="errors"></a>
+1. 在虚拟卡平台开一张 Visa / Mastercard 虚拟卡，完成实名（KYC）并充值，金额要够月费加手续费。
+2. 打开 [chatgpt.com](https://chatgpt.com)，登录自己的账号，点左下角头像 → **Upgrade plan**，在 [官方价格页](https://chatgpt.com/pricing/) 核对套餐。
+3. 在付款页填写虚拟卡卡号、有效期、CVC 和账单地址。账单地址填开卡平台给的地址。
+4. 如果要求 3D Secure 验证，按提示完成。
+5. 回到 **Settings → Account** 确认套餐，或者查收 OpenAI 的付款收据邮件。
 
-## 付款失败常见报错
+### 注意
+
+- **卡段风控不稳定：** 同一批卡段今天能过、明天就可能被拒，失败率不低。
+- **平台会跑路：** 虚拟卡平台说停就停，卡里别存大额。
+- **成本叠加：** 开卡费、月费、充值手续费、汇率差加起来，往往比月费本身高一截。
+- **自动续费：** 官网订阅默认自动续费，卡里余额不够就扣款失败，会员直接中断。
+- 被拒后 **不要用同一张卡、同一个环境连续重试**，次数多了账号会被标记。
+
+> 💡 **只为开一个 Plus 不值得折腾虚拟卡：** [溪悦代充](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2) Plus 一个月 ¥118，不用开卡、不用续卡。
+
+---
+
+## 四种方式算总账
+
+| | 方式一 溪悦代充 | 方式二 App Store | 方式三 Google Play | 方式四 官网 + 虚拟卡 |
+| --- | --- | --- | --- | --- |
+| Plus 月成本（约） | **¥118** | $19.99 + 礼品卡溢价 | $20 + 税 | $20 + 开卡/充值费 + 汇率差 |
+| 要境外卡 | ❌ 不要 | ❌（用礼品卡） | ✅ 双币卡 | ✅ 虚拟卡 |
+| 要切区 / 节点 | ❌ | ✅ 切美区 | ✅ 美区 + 美国节点 | 看情况 |
+| 上手难度 | ⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+| 出问题找谁 | 中文客服 | Apple 支持 | Google 支持 | OpenAI 支持 + 卡平台 |
+| 主要风险 | 第三方渠道，需交 Session | 黑卡、切区 | 绑卡失败、换区 | 卡段风控、平台跑路 |
+
+---
+
+## 付款失败报错速查
 
 | 报错 / 现象 | 常见原因 | 怎么办 |
-|---|---|---|
-| Your card was declined（卡被拒） | 发卡行拒绝、卡不支持境外线上交易、账单地址不一致 | 联系发卡行确认原因；核对账单地址；参考 [官方排查](https://help.openai.com/en/articles/7232916-why-was-my-credit-card-declined) |
-| 3D Secure 验证失败 / 收不到验证码 | 浏览器拦截了弹窗，或银行不支持这类验证 | 允许弹窗、关闭广告拦截插件后重试；仍不行问发卡行 |
-| 支付页一直转圈 / 点了没反应 | 网络不稳、浏览器插件拦截支付组件、缓存问题 | 换无痕窗口或换浏览器再试；连续三次失败就先停 |
-| Something went wrong | 通用错误，原因不确定 | 记下时间和完整提示，隔一段时间再试；持续出现联系 OpenAI 支持 |
-| 地区不支持 / 看不到订阅入口 | 所在地区不在支持范围 | 以官方支持地区列表为准，不要用虚假信息绕过 |
-| 扣款了但没变成 Plus | 充到了另一个账号，或页面没刷新 | 见下一节「怎么查」 |
+| --- | --- | --- |
+| `Your card was declined` | 卡不支持境外线上交易或周期扣款 | 问发卡行开通；或换 💡 [代充](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2) |
+| `Your card does not support this type of purchase` | 卡类型不支持订阅，常见于部分虚拟卡、借记卡 | 换卡，别反复刷同一张 |
+| 3D Secure 验证失败 | 银行验证超时或被拒 | 确认能收到银行短信 / App 推送后再试 |
+| `Unable to process payment` / 付款一直转圈 | 风控、IP 和账单地址不一致 | 别连续重试，等一段时间换稳定网络 |
+| App 里看不到升级入口 | 商店地区不受支持 | 按方式二、三切区，或用 💡 [代充](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2) |
+| 付款成功但还是 Free | 登错账号，或订阅还没同步 | 见下面「开通后」 |
 
-通用原则：**每次失败都保存原始提示，不要连续重复提交。**
+**通用原则：** 每次失败都截图保存原始报错，不要短时间内反复提交。
 
-------
+---
 
-> ### 📢 广告：不想折腾境外付款？
->
-> 如果你没有可用的境外卡，或者在上面的步骤里反复卡住，可以看看我们的代充站 **[溪悦 xiyueai.cc](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=ad)**：支付宝 / 微信 / USDT 付款，充到你自己的账号上，不需要账号密码，开通失败卡密退回可重试。
->
-> 需要提前知道：自助开通要提交账号的 Session，它不是密码但属于敏感凭证；第三方代充不是 OpenAI 官方渠道，也不能改变 OpenAI 的地区和账号规则。开通成功后，可以在 ChatGPT 的 Settings → Security 里「退出所有设备」，让交出去的 Session 立即失效。
+## 开通后：查状态、取消、续费
 
-------
+**确认开通成功**
 
-<a id="manage"></a>
+1. 看 **Settings → Account** 里的邮箱，确认是你付款时登录的那个号。很多人付完款才发现充到了另一个号上。
+2. 退出重新登录，或者用无痕窗口登录，看左下角显示的套餐。
+3. App 内购的，在 App 里点「恢复购买」（Restore purchases）同步。
 
-## 订阅成功后：怎么查、怎么取消、能不能退款
+**在哪取消**
 
-### 怎么确认订阅成功
+| 购买渠道 | 取消入口 |
+| --- | --- |
+| 官网 | Settings → Account → 管理订阅 |
+| App Store | iPhone「设置 → Apple 账户 → 订阅」 |
+| Google Play | Google Play →「付款和订阅」 |
+| 溪悦代充 | 按月开通，不会自动扣款，到期不续就行 |
 
-1. 先看 Settings → Account 里的邮箱，确认是你付款时登录的那个账号。很多人付完款才发现充到了另一个账号上。
-2. 退出重新登录，或用无痕窗口登录，看左下角套餐。
-3. 去邮箱搜 OpenAI 的付款收据，确认真的扣款成功。
-4. App 内购买的，在 App 里点「恢复购买」（Restore purchases）同步。
+取消后本期会员保留到期，退款规则各渠道不通用，详见 OpenAI [如何取消 ChatGPT 订阅](https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-subscription)。
 
-### 怎么取消
+> 💡 **不想每月惦记续费？** 溪悦代充按月买，到期前回来下单就行，不会被悄悄扣款。
 
-- 网页订阅：Settings → Account → 管理订阅，取消后本期权益保留到期。
-- App Store 订阅：iPhone「设置 → Apple 账户 → 订阅」。
-- Google Play 订阅：Google Play →「付款和订阅」。
-
-官方说明：[如何取消 ChatGPT 订阅](https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-subscription)
-
-### 能不能退款
-
-按购买渠道的规则走：网页订阅看 OpenAI 的条款，App Store 和 Google Play 分别向 Apple、Google 申请。不同渠道的规则不通用。
-
-------
-
-<a id="faq"></a>
+---
 
 ## 常见问题 FAQ
 
-### 国内银行发的 Visa / Mastercard 能付吗？
+**Q：代充要给 ChatGPT 密码吗？**
+不用。溪悦代充开在你自己的账号上，只需要提交账号 Session，开通后可以「退出所有设备」让它失效。**密码和邮箱验证码不要给任何人。**
 
-不能一概而论。能不能付成，取决于所在地区是否受支持、发卡行是否放行境外线上订阅、能否完成 3D Secure 验证。先问发卡行，再按上面的步骤试，失败了别反复刷。
+**Q：代充会封号吗？**
+会员开在你自己的号上，和官方订阅的账号状态一样。封不封号主要看账号本身：多人共用、频繁换 IP、用来路不明的号，风险都更高。
 
-### 已经是 Plus，想升级 Pro 要先取消吗？
+**Q：多个人能共用一个 Plus 吗？**
+不建议。OpenAI 条款禁止把个人账号给别人用，聊天记录也会互相看到；共用还会频繁换 IP，容易触发风控。多人用可以看 ChatGPT Business。
 
-不用。在网页 Upgrade plan 里直接选 Pro，按页面提示处理差价。App Store 订阅的要在 App 里或 Apple 订阅管理里改档。
+**Q：已经是 Plus，想升 Pro 要先取消吗？**
+官网订阅在 Upgrade plan 里直接选 Pro，按页面提示补差价；App 内购的在 Apple / Google 订阅管理里改档。代充用户直接下单 Pro，或者找客服确认。
 
-### 多个人能共用一个 Plus 吗？
+**Q：订阅了 Plus，API 能用吗？**
+不能。API 在 platform.openai.com 单独充值、单独计费。
 
-不能。OpenAI 条款禁止把个人账号给他人使用，聊天记录也会互相看到。多人用可以看 ChatGPT Business。
+**Q：Codex 能用吗？**
+能。Plus / Pro 会员登录 Codex 即可使用，额度按套餐档位走；额度不够还可以单独买 Codex 额度。
 
-### 订阅了 Plus，API 能用吗？
+**Q：账号被停用了怎么办？**
+按页面提示走 OpenAI 官方申诉，提交真实信息。任何第三方都没法代为解封。
 
-不能。API 要在 platform.openai.com 单独充值、单独计费。
+---
 
-### 账号被停用了怎么办？
+## 🚀 还是嫌麻烦？
 
-按页面提示通过 OpenAI 官方支持申诉，提交真实信息。任何第三方都不能代为解封。
+方式二到方式四都要切区、绑卡或者开卡，失败了还得自己排查。只想 **今天就用上 Plus / Pro**：
 
-------
+👉 **[溪悦 xiyueai.cc](https://xiyueai.cc/?utm_source=github&utm_medium=readme&utm_campaign=guide2)**：支付宝 / 微信 / USDT 付款，充进你自己的账号，失败卡密退回可重试。
 
-<a id="sources"></a>
+💬 微信 `GTGZTQ` ｜ QQ `99898089`
+
+---
 
 ## 官方来源
 
+- [ChatGPT 价格页](https://chatgpt.com/pricing/)
 - [ChatGPT 支持的国家和地区](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories)
-- [ChatGPT Pro 档位说明](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers)
-- [多币种账单与付款方式](https://help.openai.com/en/articles/10421635-multi-currency-billing)
-- [信用卡被拒怎么办](https://help.openai.com/en/articles/7232916-why-was-my-credit-card-declined)
 - [如何取消 ChatGPT 订阅](https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-subscription)
-- [OpenAI 使用条款](https://openai.com/policies/row-terms-of-use/)
-
-------
+- [Apple：更改 Apple 账户的国家或地区](https://support.apple.com/zh-cn/118283)
+- [Google Play：更改 Google Play 国家/地区](https://support.google.com/googleplay/answer/7431675?hl=zh-Hans)
 
 ## 更新记录
 
+- 2026-10-14：改版为四种方式对比，新增代充价格表、Google Play 和虚拟卡教程、报错速查。
 - 2026-10-13：首版发布。
 
 ## 免责声明
 
-本仓库内容仅供参考。ChatGPT 的套餐、价格、地区和条款由 OpenAI 决定，可能随时变化，请以官方页面为准。
+本仓库内容仅供参考。ChatGPT 的套餐、价格、地区和条款由 OpenAI 决定，Apple、Google 的地区和支付规则由各自平台决定，随时可能变化，请以官方页面为准。切换地区、使用虚拟卡可能违反相关平台条款，请自行判断风险。
